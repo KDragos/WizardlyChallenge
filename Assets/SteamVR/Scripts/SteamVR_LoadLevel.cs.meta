@@ -1,10 +1,21 @@
 fileFormatVersion: 2
 guid: a5a6a70209b6e6345bfe18b02314a54e
-timeCreated: 1446783318
-licenseType: Store
+timeCreated: 1497637844
+licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - loadingScreen: {instanceID: 0}
+  - progressBarEmpty: {instanceID: 0}
+  - progressBarFull: {instanceID: 0}
+  - loadingScreenTransform: {instanceID: 0}
+  - progressBarTransform: {instanceID: 0}
+  - front: {instanceID: 0}
+  - back: {instanceID: 0}
+  - left: {instanceID: 0}
+  - right: {instanceID: 0}
+  - top: {instanceID: 0}
+  - bottom: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

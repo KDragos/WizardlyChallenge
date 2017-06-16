@@ -29,27 +29,35 @@ public class Goal : MonoBehaviour {
 
 	void StartTutorial() {
         currentLevel = 1;
-        SteamVR_LoadLevel.Begin (levelNames[currentLevel]);
+        beginLevel();
+        //SteamVR_LoadLevel.Begin (levelNames[currentLevel]);
 	}
 
 	void StartTutorial2() {
         currentLevel++;
-        SteamVR_LoadLevel.Begin (levelNames[currentLevel]);
+        beginLevel();
+        //SteamVR_LoadLevel.Begin (levelNames[currentLevel]);
 	}
 
     void StartGame() {
         currentLevel = 3;
-        SteamVR_LoadLevel.Begin (levelNames[currentLevel]);
+        beginLevel();
+        //SteamVR_LoadLevel.Begin (levelNames[currentLevel]);
 	}
 
 	void LoadNextLevel() {
         if(startingPlatform.isStartPossible)
         {
             currentLevel++;
-            SteamVR_LoadLevel.Begin (levelNames[currentLevel]);
+            beginLevel();
         }
 
 	}
+
+    void beginLevel()
+    {
+        SteamVR_LoadLevel.Begin(levelNames[currentLevel], false, 10, 0, 0, 0, 1.0f);
+    }
 
 	void QuitGame() {
 		Application.Quit ();
